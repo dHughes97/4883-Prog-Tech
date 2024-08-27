@@ -10,8 +10,8 @@
 
 #### Image:
 
-<img src="../profile_images/Linkedinprofile.PNG" width="200">
+<img src="/profile_images/Linkedinprofile.PNG" width="200"></img>
 
 #### Avatar:
 
-<img src="/4883-Prog-Tech/profile_images/gaming.png" width="200">
+<img src="/profile_images/gaming.png" width="200"></img>
