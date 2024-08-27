@@ -10,7 +10,7 @@
 
 #### Image:
 
-<img src="/4883-Prog-Tech/profile_images/Linkedinprofile.PNG" width="200">
+<img src="../profile_images/Linkedinprofile.PNG" width="200">
 
 #### Avatar:
 
