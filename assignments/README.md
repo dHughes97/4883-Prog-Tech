@@ -1,5 +1,5 @@
 ## Assignments
-
 |  #  | Folder Link                            | Assignment Description                               |
 | :-: | -------------------------------------- | ---------------------------------------------------- |
-|  1  | [A03](./A03) | [Hasmat the Brave Warrior](./A03/README.md) |
+|  1  | [A03/p10055](./assignments/A03/p10055) | [Hashmat the Brave Warrior](./assignments/A03/README.md) |
+
