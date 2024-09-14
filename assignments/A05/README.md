@@ -5,7 +5,9 @@ This assignment contains a count of all the problems I a have solved throughout 
 
 ### Problems Solved
 1. P10783 - Odd Sum - UVA Online Judge
-2. Problem 75 - Sorted colors - Leetcode - Submission ID:1390298915
+2. Problem 75 - Sorted colors - LeetCode - Submission ID:1390298915
+3. Problem 1491 - Average Salary - LeetCode
+4. Rpblem 1046 - Last Stone Weight - LeetCode
 
 
 ### Instructions
