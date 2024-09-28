@@ -6,7 +6,7 @@
 
 #### Email: dlhughes0129@my.msutexas.edu
 
-#### Website: https://en.wikipedia.org/wiki/Albert_Einstein
+#### Website: https://dhughes97.github.io/
 
 #### Image:
 
