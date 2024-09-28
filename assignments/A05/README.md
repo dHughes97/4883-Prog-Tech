@@ -3,7 +3,7 @@
 ### Description:
 This assignment contains a count of all the problems I a have solved throughout the semester. 
 
-##  Assignments
+##  Problems
 
 |   #   | Folder Link | Assignment Description |
 | :---: | ----------- | ---------------------- |

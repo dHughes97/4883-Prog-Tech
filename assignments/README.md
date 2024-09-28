@@ -1,6 +1,12 @@
-## Assignments
-|  #  | Folder Link                            | Assignment Description                               |
-| :-: | -------------------------------------- | ---------------------------------------------------- |
-|  1  | [A03/p10055](./assignments/A03/p10055) | [Hashmat the Brave Warrior](./assignments/A03/README.md) |
-|  1  | [P10783](./assignments/P10783) | [Odd Sum](./assignments/P10783) |
+##  Assignments
+
+|   #   | Folder Link | Assignment Description |
+| :---: | ----------- | ---------------------- |
+|   1  | [A03](./A03/)   |  Register + HashMat        |
+|   2  | [A04](./A04/)   |       What to Do |
+|   3  | [A05](./A05/)    |  Easy Breezy       |
+|   4  | [A06](./A06/)    |  Hardwood Sneezy      |
+|   5  | [A07](./A07/)    |  Priority Queezy      |
+|   6  | [A08](./A08/)    |  Graphin Sleezy       |
+
 
