@@ -27,8 +27,8 @@ This assignment contains a count of all the problems I a have solved throughout 
 6. Problem 692 - Top K Frequent Words - LeetCode - Submission Accepted
 7. Problem 217 - Contains Duplicates - LeetCode - Submission Accepted
 8. Problem 2 - Add Two Numbers - LeetCode - Submission Accepted 
-9. Problem 349 - Interesection of Two Arrays - LeetCode - 
-10. Problem 66 - Plus One - LeetCode -  
+9. Problem 349 - Interesection of Two Arrays - LeetCode - Submission Accepted
+10. Problem 66 - Plus One - LeetCode -  Submissiong Accepted
 
 ### Instructions
 - Used the following endpoint to ensure submission was properly accepted

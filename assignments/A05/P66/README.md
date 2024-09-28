@@ -37,5 +37,32 @@ Constraints:
 
 Solution: 
 ```
+class Solution {
+public:
+    vector<int> plusOne(vector<int>& digits) {
+        // We need to iterate through the array from right to left
+        for (int i = digits.size() - 1; i >= 0; i--) {
+            // the indices is at the back add one to it 
+            if(i ==digits.size()-1){
+                digits[i]++;
+            }
+            //handle for adding to 9 
+            if(digits[i] == 10){
+                digits[i] = 0; 
+                if(i != 0){
+                    //add one to the digit before 
+                    digits[i-1]++;
+                }
+                // If we at front add a 0 to the list and make current
+                // index == to 1
+                else {
+                    digits.push_back(0);
+                    digits[i] = 1;
+                }
+            }
+        }
 
+        return digits;
+    }
+};
 ```
