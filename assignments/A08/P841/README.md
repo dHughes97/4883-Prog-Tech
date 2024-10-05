@@ -33,8 +33,39 @@ Constraints:
 - 0 <= rooms[i][j] < n
 - All the values of rooms[i] are unique.
 
-
+Had fun with this one!
 Solution: 
 ```
+/**
+ * @param {number[][]} rooms
+ * @return {boolean}
+ */
+var canVisitAllRooms = function(rooms) {
+    const n = rooms.length;
+    const visited = new Array(n).fill(false);
+    const stack = [0];  // Start from room 0
+    
+    visited[0] = true; // Mark room 0 as visited
+    
+    while (stack.length > 0) {
+        const room = stack.pop(); // Get the last room from the stack
+        
+        for (let key of rooms[room]) {
+            if (!visited[key]) {
+                visited[key] = true; // Mark this room as visited
+                stack.push(key);     // Add this room to the stack to visit its keys
+            }
+        }
+    }
+
+    // Check if all rooms have been visited
+    for (let visit of visited) {
+        if (!visit) {
+            return false;
+        }
+    }
+
+    return true;
+};
 
 ```
