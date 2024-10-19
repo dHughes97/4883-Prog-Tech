@@ -31,5 +31,34 @@ Constraints:
 
 Solution: 
 ```
+/**
+ * @param {string} s
+ * @return {string}
+ */
+function frequencySort(s) {
+  let frequencyMap = {};
+  for (let char of s) {
+    if (frequencyMap[char]) { //if in the map increment
+      frequencyMap[char]++;
+    } else {
+      frequencyMap[char] = 1; // otherwise make one (first seen)
+    }
+  }
+
+  //get frequencyMap and sort in descending order based on its key value
+  let sortedChars = Object.keys(frequencyMap).sort((a, b) => {
+    return frequencyMap[b] - frequencyMap[a]; //comparison
+  });
+
+  let result = '';
+  //repeat the character based on its key value
+  for (let char of sortedChars) {
+    
+    result += char.repeat(frequencyMap[char]);
+  }
+
+  return result;
+}
+
 
 ```
