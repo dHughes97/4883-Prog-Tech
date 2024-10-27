@@ -28,5 +28,44 @@ Constraints:
 
 Solution: 
 ```
+/**
+ * @param {number[][]} trees
+ * @return {number[][]}
+ */
+function outerTrees(trees) {
+    if (trees.length <= 1) return trees;
+
+    // sort the x and y coordinates 
+    trees.sort((a, b) => a[0] === b[0] ? a[1] - b[1] : a[0] - b[0]);
+
+    //determine clockwise, counterclockwise, or colinear
+    const orientation = (p, q, r) => {
+        return (q[1] - p[1]) * (r[0] - q[0]) - (q[0] - p[0]) * (r[1] - q[1]);
+    };
+
+    const hull = [];
+
+    // lower hull
+    for (const point of trees) {
+        while (hull.length >= 2 && orientation(hull[hull.length - 2], hull[hull.length - 1], point) < 0) {
+            hull.pop();
+        }
+        hull.push(point);
+    }
+
+    // upper hull
+    const t = hull.length + 1;
+    for (let i = trees.length - 1; i >= 0; i--) {
+        const point = trees[i];
+        while (hull.length >= t && orientation(hull[hull.length - 2], hull[hull.length - 1], point) < 0) {
+            hull.pop();
+        }
+        hull.push(point);
+    }
+
+    // get rid of duplicate 
+    const uniquePoints = new Set(hull.map(JSON.stringify));
+    return Array.from(uniquePoints).map(JSON.parse);
+}
 
 ```
