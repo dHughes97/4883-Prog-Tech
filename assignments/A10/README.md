@@ -10,7 +10,7 @@ Return true if your path crosses itself or false if it does not.
 ### Input Examples: 
 Example 1:
 <br>
-<img src="./profile_images/example1.png" width="200" />
+<img src="/profile_images/example1.png" width="200" />
 <br>
     Input: distance = [2,1,1,2]
     Output: true
@@ -18,7 +18,7 @@ Example 1:
 <br> 
 Example 2: 
 <br>
-<img src="./profile_images/example2.png" width="200" />
+<img src="/profile_images/example2.png" width="200" />
 <br>
     Input: distance = [1,2,3,4]
     Output: false
@@ -26,7 +26,7 @@ Example 2:
 <br>
 Example 3: 
 <br>
-<img src="./profile_images/example3.png" width="200" />
+<img src="/profile_images/example3.png" width="200" />
 <br>
     Input: distance = [1,1,1,2,1]
     Output: true
