@@ -10,5 +10,6 @@
 |   6  | [A08](./A08/)    |  Graphin Sleezy       |
 |   6  | [A09](./A09/)    |  Convex Hull       |
 |   6  | [A10](./A10/)    |  Geometry Problem       |
+|   6  | [A11](./A11/)    |  Bipartite/Graph Problems       |
 
 
