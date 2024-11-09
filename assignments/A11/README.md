@@ -40,5 +40,35 @@ Constraints:
 
 Solution: 
 ```
+var gardenNoAdj = function(numGardens, paths) {
+  const adjacencyList = [...Array(numGardens)].map(() => new Set());
+
+  // loop through each path and add the connections to the adjacency list
+  paths.forEach(path => {
+    if (path[0] > path[1]) adjacencyList[path[0] - 1].add(path[1] - 1);
+    else adjacencyList[path[1] - 1].add(path[0] - 1);
+  });
+
+  const flowerTypes = Array(numGardens);
+
+  // loop through each garden to assign flower types
+  for (let garden = 0; garden < numGardens; garden++) {
+    const usedColors = Array(5);
+
+    // mark the flower types used by neighboring gardens
+    adjacencyList[garden].forEach(neighbor => {
+      usedColors[flowerTypes[neighbor]] = true; 
+    });
+
+    // assign the smallest flower type not used by any neighboring gardens
+    for (let color = 1; color <= 4; color++) {
+      if (!usedColors[color]) {  
+        flowerTypes[garden] = color; 
+        break;  
+      }
+    }
+  }
+  return flowerTypes;
+};
 
 ```
